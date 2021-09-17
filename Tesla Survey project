@@ -1,0 +1,36 @@
+<h1 id="title">Tesla Customer Questionnaire</h1>
+<p id="description"> Thank you for helping us improve our product by filling out this survey</p>
+<form id="survey-form">
+  <label for="name">Please Enter your full name:</label><br>
+  <input type="text" id="name" placeholder="John Doe" required>
+  <br>
+  <label for="email">Please enter your email adress:</label><br>
+  <input type="text" id="email" placeholder="example@email.com" required>
+  <br>
+  <label for="number">Please enter the serial number of your car:</label><br>
+  <input type="number" id="number" min=11111 max=55555 placeholder="12345" required><br>
+  What Tesla Model do you own? <br>
+  <input type="radio" id="S" name="model" value="Model S" checked>
+  <label for="x">Model S</label><br>
+   <input type="radio" id="3" name="model" value="Model 3">
+  <label for="x">Model 3</label><br>
+   <input type="radio" id="X" name="model" value="Model X">
+  <label for="x">Model X</label><br>
+   <input type="radio" id="Y" name="model" value="Model Y">
+  <label for="x">Model Y</label><br>
+  What influenced your decision on the puchase of a Tesla?<br>
+  <input type="checkbox" name="decision" id="friends" value="Friends">
+  <label for="friends">Recommendations by Friends/Colleagues/Family</label><br>
+   <input type="checkbox" name="decision" id="design" value="Design">
+  <label for="design">The cars design</label><br>
+   <input type="checkbox" name="decision" id="environment" value="Environment">
+  <label for="environment">Because it is electric and I care for the environment</label><br>
+     <input type="checkbox" name="decision" id="oil" value="Save on oil">
+  <label for="oil">Because it is electric and I want to save the money spent on oil</label><br>
+   <input type="checkbox" name="decision" id="musk" value="Musk">
+  <label for="musk">Because I like Elon Musk and his vision and want to support it</label><br>
+   <input type="checkbox" name="decision" id="other" value="other">
+  <label for="other">other: <input type="text" id="otherreason"></label><br>
+  
+  
+</form>
