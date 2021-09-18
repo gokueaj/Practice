@@ -1,36 +1,91 @@
+<style>
+  h1{
+    font-size:80px;
+    font-family:arial;
+    text-align:center;
+  }
+  p{
+    font-size: 50px;
+    text-align:center;
+  }
+    
+</style>
+
+
 <h1 id="title">Tesla Customer Questionnaire</h1>
-<p id="description"> Thank you for helping us improve our product by filling out this survey</p>
+<p id="description"> Thank you for helping us improve our product by filling out this survey!</p>
 <form id="survey-form">
-  <label for="name">Please Enter your full name:</label><br>
+  <label for="name" id="name-label">Please Enter your full name:</label><br>
   <input type="text" id="name" placeholder="John Doe" required>
   <br>
-  <label for="email">Please enter your email adress:</label><br>
+  <label for="email" id="email-label">Please enter your email adress:</label><br>
   <input type="text" id="email" placeholder="example@email.com" required>
   <br>
-  <label for="number">Please enter the serial number of your car:</label><br>
+  <label for="number" id="number-label">Please enter the serial number of your car:</label><br>
   <input type="number" id="number" min=11111 max=55555 placeholder="12345" required><br>
   What Tesla Model do you own? <br>
   <input type="radio" id="S" name="model" value="Model S" checked>
-  <label for="x">Model S</label><br>
+  <label for="S" id="S-label">Model S</label><br>
    <input type="radio" id="3" name="model" value="Model 3">
-  <label for="x">Model 3</label><br>
+  <label for="3" id="3-label">Model 3</label><br>
    <input type="radio" id="X" name="model" value="Model X">
-  <label for="x">Model X</label><br>
+  <label for="X" id="X-label">Model X</label><br>
    <input type="radio" id="Y" name="model" value="Model Y">
-  <label for="x">Model Y</label><br>
+  <label for="Y" id="Y-label">Model Y</label><br>
   What influenced your decision on the puchase of a Tesla?<br>
   <input type="checkbox" name="decision" id="friends" value="Friends">
-  <label for="friends">Recommendations by Friends/Colleagues/Family</label><br>
+  <label for="friends" id="friends-label">Recommendations by Friends/Colleagues/Family</label><br>
    <input type="checkbox" name="decision" id="design" value="Design">
-  <label for="design">The cars design</label><br>
+  <label for="design" id="design-label">The cars design</label><br>
    <input type="checkbox" name="decision" id="environment" value="Environment">
-  <label for="environment">Because it is electric and I care for the environment</label><br>
+  <label for="environment" id="environment-label">Because it is electric and I care for the environment</label><br>
      <input type="checkbox" name="decision" id="oil" value="Save on oil">
-  <label for="oil">Because it is electric and I want to save the money spent on oil</label><br>
+  <label for="oil" id="oil-label">Because it is electric and I want to save the money spent on oil</label><br>
    <input type="checkbox" name="decision" id="musk" value="Musk">
-  <label for="musk">Because I like Elon Musk and his vision and want to support it</label><br>
+  <label for="musk" id="musk-label">Because I like Elon Musk and his vision and want to support it</label><br>
    <input type="checkbox" name="decision" id="other" value="other">
-  <label for="other">other: <input type="text" id="otherreason"></label><br>
+  <label for="other" id="other-label">other: <input type="text" id="otherreason"></label><br>
+  <label for="ownlength"> For how long have you had ownership over your Tesla car?</label> <br>
+  <select name="ownlength" id="ownlength">
+   <option value="o-6">0-6 months</option>
+  <option value="6-12">6-12 months</option>
+  <option value="12-24">1-2 years</option>
+  <option value="24">more than 2 years</option>
+  </select>
+  <br>
+  <input type="textarea" id="textarea" placeholder="additional comments or concerns" rows="4" cols="50"><br>
+  <button id="submit">Submit</button>
+    
+    
+    
   
   
 </form>
+
+<!-- CSS-->
+body{
+  background-color: silver;
+  margin:50px;
+}
+#survey-form{
+  background-color: grey;
+ text-align:center;
+  font-size: 30px;
+  border-radius:25px;
+  padding:30px;
+}
+
+#submit{
+  height:100px;
+  width:200px;
+  font-size:30px;
+  margin-top:30px;
+}
+
+#textarea{
+  height:200px;
+  width:400px;
+  margin-top:30px;
+}
+
+
