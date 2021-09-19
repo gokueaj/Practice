@@ -1,19 +1,64 @@
 <header id="header">
   <img id="header-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.logolynx.com%2Fimages%2Flogolynx%2Fc8%2Fc8cfa18d07c89bf298a5d2ffb02cafa6.png&f=1&nofb=1">
   <nav id="nav-bar">
-     <ul>
-  <li><a class="nav-link"href="product.asp">Products</a></li>
-  <li><a class="nav-link"href="contact.asp">Contact</a></li>
-  <li><a class="nav-link" href="about.asp">About</a></li>
+     <ul id="navlist">
+  <li><a class="nav-link"href="#products">Products</a></li>
+  <li><a class="nav-link"href="#contact">Contact</a></li>
+  <li><a class="nav-link" href="#about">About</a></li>
 </ul> 
   </nav>
-    </header>
 <form id="form">
-  <input type="email" id="email" placeholder="example@email.com">
-  <input type="submit" id="submit" value="submit">
+  <input type="email" id="email" placeholder="example@email.com" required>
+  <input type="submit" id="submit" value="submit" formaction="https://www.freecodecamp.com/email-submit">
 </form>
-
-
+   </header>
+<div id="products">
+  <h2>Products</h2><br>
+  <p> choose one of our many capsules for every occasion!<br><br>
+    below you can find a short video of our House capsule in action
+  </p>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/2xnE3MQXWy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div id="productdesc">
+  <div class="productbox" id="carcapsule">
+    <h3> Car Capsule</h3>
+     <ul>
+     <li>In Blue Black or White</li>
+     <li>Electric car with 250 PS</li>
+     <li>2.5m x 1.5m x 1.2m</li>
+    </ul>
+    <br>
+    <button class="btn">Buy now</button>
+  </div>
+  
+  <div class="productbox" id="housecapsule">
+    <h3> House Capsule</h3>
+   <ul>
+     <li>In blue Black or White</li>
+     <li>150sqm over 4 rooms and 3 stories</li>
+     <li>Made with Plywood</li>
+    </ul>
+    <button class="btn">Buy now</button>
+  </div>
+  
+  <div class="productbox" id="poolcapsule">
+    <h3>Pool Capsule</h3>
+     <ul>
+     <li>Pool filled with chlorinated water</li>
+     <li>100l capacity</li>
+     <li>15m x 10m</li>
+    </ul>
+    <button class="btn">Buy now</button>
+    </div>
+  </div>
+    </div>
+<div id="contact">
+  <h3>Contact</h3>
+  If you have any questions about our products or our company write us an email at support@cc.com or call us at +41053771683 
+</div>
+<div id="about">
+   <h3>About</h3>
+The Capsule Corporation is a company founded in 712 and is run by Dr. Brief. The corporation is based around, and takes its name from, the Hoi-Poi Capsules (also known as DynoCaps) invented by Dr. Brief himself.
+</div>
 
 
 
@@ -24,24 +69,29 @@
 
 
 <!-- CSS-->
+body{
+  background-color:cyan;
+}
+
 #header{
   text-align:center;
+  position: fixed;
+  width:100%;
 }
 
 #header-img{
-  width:300px;
-  height:300px;
+  width:100px;
+  height:100px;
+ 
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-li{
-  display:inline;
-}
+
 
 a{
   padding:10px;
@@ -50,4 +100,49 @@ a{
 #form{
   text-align:center;
   margin-top:10px;
+}
+
+#productdesc{
+   margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.productbox{
+  margin:30px;
+  font-size:25px;
+  background-color:white;
+  padding:15px;
+  border-style:solid;
+  border-color:blue;
+  border-radius:25px;
+}
+
+#carcapsule{
+  width: 400px;
+}
+
+#poolcapsule{
+  width: 400px;
+}
+
+#housecapsule{
+  width: 400px;
+}
+
+nav li{
+  display:inline;
+}
+
+#about{
+  margin-top:30px;
+  
+}
+
+.btn{
+  background-color:blue;
+  color:cyan;
+  width:100px;
+  display:flex;
+  justify-content:center;
 }
