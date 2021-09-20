@@ -1,0 +1,51 @@
+<!-- HEADER BEGINNING-->
+<header id="header">
+  <nav id="navbar">
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+<!-- HEADER END-->
+
+<!-- WELCOME SECTION BEGINNING-->
+<section id="welcome-section">
+  <h1>Welcome! I am gokueaj</h1>
+  <h2>An aspiring developer</h2>
+</section>
+<!-- WELCOME SECTION END-->
+
+<!-- PROJECTS SECTION BEGINNING-->
+
+<section id="projects">
+  <h3> Projects</h3>
+  <div class=project-tile">
+    <a class="project-link" href="https://codepen.io/gokueaj /full/dyRJzWO" target="_blank">Tesla Customer Survey</a>
+  </div>
+  <div class="project-tile">
+      <a class="project-link" href="https://codepen.io/gokueaj/full/LYLzaLE" target="_blank">Tribute Page for Nicolas Cage</a>
+  </div>
+  <div class="project-tile">
+    <a class="project-link" href="https://codepen.io/gokueaj/full/GRExjxW" target="_blank">Landing Page Capsule Corps</a>
+  </div>
+  <div class="project-tile">
+    <a class="project-link" href="https://codepen.io/gokueaj/full/yLXKjdG" target="_blank"> Technical Documentation Dark Souls</a>
+  </div>
+</section>      
+<!-- PROJECTS SECTION ENDING-->
+
+<!-- ABOUT BEGINNING-->
+<section id="about">
+  <h3>About</h3>
+<p>Take a look at my personal pages:</p>
+  <ul>
+    <li><a id="profile-link" href="https://github.com/gokueaj" target="_blank">GitHub</a></li>
+    <li>CodePen</li>
+    <li>FreeCodeCamp</li>
+  </ul>
+  
+</section>
+<!-- ABOUT SECTION END-->
+
+<footer id="footer">
+ <p>contact me via my e-mail: gokueaj1218@gmail.com
+</footer>
