@@ -1,0 +1,21 @@
+//inline code
+
+/* multi
+line
+code
+oh
+yeah*/
+
+var myName;
+
+
+var a;
+a=7;
+
+
+var a;
+a = 7;
+var b;
+a=b;
+var a=9;
+
