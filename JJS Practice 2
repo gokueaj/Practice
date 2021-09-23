@@ -1,0 +1,49 @@
+var a=5;
+var b=10;
+var c="I am a";
+
+a = a + 1;
+b = b + 5;
+c = c + " String!";
+
+<!-- camelCase-->
+// Variable declarations
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+// Variable assignments
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000;
+
+<--END-->
+
+<!--addition etc: Also all posssible with decimal(floating pointss)-->
+var sum=10+5;
+var dif=40-20;
+var multi=3*7;
+var quoti=12/4;
+myvar++ <!--is the same as-->myvar=myvar+1;
+myvar-- <!--is the same as-->myvar=myvar-1;
+var remainder=11%3;<!--gibt restwert an-->
+
+<!-- a=a+3 is the same as a+=3. analog with substraction dividing and multiplication-->
+a += 12;
+b += 9;
+c += 7;
+
+a -= 6;
+b -= 15;
+c -= 1;
+
+a *= 26;
+b *= 5;
+c *= 2;
+
+a /= 3;
+b /= 5;
+c /= 2;
+
+
+
