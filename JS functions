@@ -44,3 +44,16 @@ function nextInLine(arr, item) {
 var testArr = [1,2,3,4,5];
 <!--end-->
 
+
+<!-- function that removes first item n array then adds the item in fucntion at end and returns the removed item-->
+function nextInLine(arr, item) {
+  arr.push(item);
+  var removed= arr.shift();
+  return removed;
+}
+<!-- END-->
+
+
+
+
+
