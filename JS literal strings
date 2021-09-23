@@ -1,0 +1,31 @@
+var myName="Peter";
+
+var myStr = "I am a \"double quoted\" string inside \"double quotes\"."
+
+var myStr='FirstLine\n\t\\SecondLine\n\
+ThirdLine'
+
+var myStr='This is the start. '+'This is the end.'
+
+var myStr='This is the first sentence. ';
+var myStr+='This is the second sentence.';
+var myName='Nicolas';
+var myStr='My neme is '+myName+' and i am well!';
+
+var someAdjective='fun!';
+var myStr = "Learning to code is ";
+myStr+=someAdjective;
+
+var lastNameLength = 0;
+var lastName = "Cage";
+lastNameLength = lastName.length;
+
+var firstLetterOfLastName = "";
+var lastName = "Cage";
+firstLetterOfLastName = lastName[0];
+var lastLetterOfLastName = lastName[lastName.length-1] 
+var secondToLastLetterOfLastName = lastName[lastName.length-2]<!--  because it cstarts at 0 the number of the last letter is the length of the string minus 1 
+and the second to lats is the string minus 2 etc-->
+
+
+
