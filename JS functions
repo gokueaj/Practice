@@ -1,0 +1,46 @@
+<!-- REUSABLE FUNCTIONS-->
+function reusableFunction(){
+  console.log("Hi World");
+}
+
+reusableFunction();
+
+<!-- Functions ith arguments-->
+function functionWithArgs(param1,param2){
+  console.log(param1+param2);
+}
+
+functionWithArgs(2,10)
+
+<!--Local vs Global: if no var or var outsid eof function teh variable is global. inside function you need to write var then is local but if oyu forget is global-->
+<!-- Local vars take precedence over global. -->
+
+<!-- return-->
+function timesFive(param1){
+  return param1*5;
+}
+
+<!-- function with n return. will add to variabel sum but display undefined-->
+function addFive(){
+  sum +=5 
+}
+
+<!--Assignment with returned value-->
+var processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+var processed=processArg(7);
+<!--END-->
+
+<!-- function that adds item at end an dremoves first number-->
+function nextInLine(arr, item) {
+  testArr.push(item);
+  testArr.shift()
+  return item;
+}
+var testArr = [1,2,3,4,5];
+<!--end-->
+
