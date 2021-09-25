@@ -1,0 +1,21 @@
+function compareEquality(a, b) {
+  if (a === b) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+function testNotEqual(val) {
+  if (val!=99) { 
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+function testStrictNotEqual(val) {
+  if (val!==17) {
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
