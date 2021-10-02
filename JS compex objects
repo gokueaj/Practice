@@ -17,7 +17,7 @@ var myMusic = [
     "release_year": 2018,
     "formats": [
       "CD",
-      "LP"
+      "Box"
     ],
     "gold": true
   }
