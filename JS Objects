@@ -1,1 +1,99 @@
+var myDog = {
+name: "Ginnie",
+legs: 4,
+tails: 1,
+friends: ["Hooman", "Bone", "Plushie"]
+};
+
+<!-- accessing object properties with dot notation-->
+var testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+var hatValue = testObj.hat;   
+var shirtValue = testObj.shirt;   
+
+<!-- ACCESSING OBJECT PROPERTIES WITH BRACKET NOTATION for more than single word strings-->
+var testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+var entreeValue = testObj["an entree"];   
+var drinkValue = testObj["the drink"]; 
+
+<!-- ACCESSING IBJECT PROPERTIES WITH VARIABLES-->
+// Setup
+var testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+
+var playerNumber=16;   
+var player = testObj[playerNumber]; 
+
+<!-- upadting object properties-->
+var myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.name="Happy Coder";
+
+<!--ADDING PROPERTIES TO OBJECTS-->
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.bark="woof";
+
+<!-- DELETING PROPERTIES FROM AN OBJECT-->
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+delete myDog.tails;
+
+<!-- using objects for lookups-->
+function phoneticLookup(val) {
+  var result = "";
+ var lookup = {
+  "alpha":"Adams",
+  "bravo":"Boston",
+  "charlie":"Chicago",
+  "delta":"Denver",
+  "echo":"Easy",
+  "foxtrot":"Frank"
+  };
+result = lookup[val];
+  return result;
+}
+
+<!-- testing objects for properties-->
+function checkObj(obj, checkProp) {
+  if (obj.hasOwnProperty(checkProp)){
+    return obj[checkProp]
+  } else{
+    return "Not Found"
+  };
+}
+
+<!--MANIPULATING COMPLEY OBJECTS-->
+
+
+
+
+
 
