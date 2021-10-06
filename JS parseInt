@@ -1,0 +1,14 @@
+// convert string into integer
+function convertToInteger(str) {
+return parseInt(str)
+}
+
+convertToInteger("56");
+
+//convert binary number to integer. radix (here 2) specifies the base of the number in the string, it is between 2 and 36
+function convertToInteger(str) {
+return parseInt(str, 2)
+}
+
+convertToInteger("10011");
+
