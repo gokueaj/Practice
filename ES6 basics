@@ -1,4 +1,4 @@
-//let is like var but shows error when overwritten and doesnt change when is globala nd local with same name
+//let is like var but shows error when overwritten and doesn't change when is globala nd local with same name
 
 //const is a read only variable that cant be changed. common practice: use ALL_CAPS_WITH_UNDERSCORES_BETWEEN_WORDS to name const variables. 
 However, it is important to understand that objects (including arrays and functions) assigned to a variable using const are still mutable. 
