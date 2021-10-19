@@ -1,0 +1,44 @@
+//add module script to html
+<html>
+  <body>
+   <script type="module" src="index.js"></script>
+  </body>
+</html>
+
+//use export to share a code block
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+
+export{uppercaseString, lowercaseString};
+
+//reuse JS code using import
+import{uppercaseString, lowercaseString} from './string_functions.js';
+
+uppercaseString("hello");
+lowercaseString("WORLD!");
+
+//Use * to Import Everything from a File
+import*as stringFunctions from './string_functions.js';
+
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
+
+//Create an Export Fallback with export default
+export default function subtract(x, y) {
+  return x - y;
+}
+
+//Import a default export
+import subtract from "./math_functions.js";
+
+subtract(7,4);
+
+
+
+
+
